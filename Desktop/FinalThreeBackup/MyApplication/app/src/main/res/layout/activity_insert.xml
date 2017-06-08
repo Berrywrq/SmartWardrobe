@@ -1,0 +1,804 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_insert"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.android.ui.InsertActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="添加单品"
+                android:textSize="22sp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="55dp"
+                />
+
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="70dp"
+                >
+
+                <ImageView
+                    android:id="@+id/img_photo"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@color/gray"
+                    android:layout_marginTop="25dp"
+                    />
+                <TextView
+                    android:id="@+id/txt_takephoto"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:text="拍照"
+                    android:background="@drawable/text_view_border"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grayline"
+            />
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--单品分类-->
+            <!--标题-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="30dp"
+                    android:text="单品分类"
+                    android:gravity="center"
+                    android:background="@drawable/text_view_border"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/txt_classify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center"
+                    />
+
+            </LinearLayout>
+            <!--属性标签-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="上装"
+                    android:layout_marginLeft="41dp"
+                    android:layout_marginTop="10dp"/>
+                <!--上装第一行-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_classify11"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    android:textSize="10sp"
+                    android:text="开衫"
+                    android:background="@drawable/text_view_border"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/txt_classify12"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:textSize="10sp"
+                        android:text="风衣"
+                        android:background="@drawable/text_view_border"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:textSize="10sp"
+                        android:text="西装"
+                        android:background="@drawable/text_view_border"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:textSize="10sp"
+                        android:text="衬衣"
+                        android:background="@drawable/text_view_border"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:textSize="10sp"
+                        android:text="T恤"
+                        android:background="@drawable/text_view_border"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+
+
+                </LinearLayout>
+                <!--上装第二行-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:textSize="10sp"
+                        android:text="卫衣"
+                        android:background="@drawable/text_view_border"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:textSize="10sp"
+                        android:text="羽绒服"
+                        android:background="@drawable/text_view_border"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:textSize="10sp"
+                        android:text="毛衫"
+                        android:background="@drawable/text_view_border"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:textSize="10sp"
+                        android:text="冲锋衣"
+                        android:background="@drawable/text_view_border"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:textSize="10sp"
+                        android:text="连衣裙"
+                        android:background="@drawable/text_view_border"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="下装"
+                    android:layout_marginLeft="41dp"
+                    android:layout_marginTop="10dp"/>
+                <!--下装第一行-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:textSize="10sp"
+                        android:text="西裤"
+                        android:background="@drawable/text_view_border"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:textSize="10sp"
+                        android:text="卫裤"
+                        android:background="@drawable/text_view_border"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:textSize="10sp"
+                        android:text="登山裤"
+                        android:background="@drawable/text_view_border"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:textSize="10sp"
+                        android:text="短裤"
+                        android:background="@drawable/text_view_border"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+
+
+                </LinearLayout>
+                <!--下装第二行-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:textSize="10sp"
+                        android:text="短裙"
+                        android:background="@drawable/text_view_border"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/txt_classify42"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:textSize="10sp"
+                        android:text="牛仔裤"
+                        android:background="@drawable/text_view_border"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:id="@+id/txt_classify43"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:textSize="10sp"
+                        android:text="休闲裤"
+                        android:background="@drawable/text_view_border"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:textSize="10sp"
+                        android:text="队服"
+                        android:background="@drawable/text_view_border"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <!--分隔线-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grayline"
+                />
+
+            <!--颜色-->
+            <!--标题-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="30dp"
+                    android:text="色调"
+                    android:gravity="center"
+                    android:background="@drawable/text_view_border"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/txt_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center"
+                    />
+
+            </LinearLayout>
+            <!--属性标签-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!--色板第一行-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="7dp">
+
+                    <TextView
+                        android:id="@+id/txt_color11"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/palette11"/>
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/palette12"/>
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/palette13"/>
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/palette14"/>
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/palette15"/>
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/palette16"/>
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/palette17"/>
+
+                </LinearLayout>
+                <!--色板第二行-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="7dp">
+
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/palette21"/>
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/palette22"/>
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/palette23"/>
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/palette24"/>
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/palette25"/>
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/palette26"/>
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/palette27"/>
+
+                </LinearLayout>
+                <!--色板第三行-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="7dp">
+
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/palette31"/>
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/palette32"/>
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/palette33"/>
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/palette34"/>
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/palette35"/>
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/palette36"/>
+                    <TextView
+                        android:id="@+id/txt_color37"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/palette37"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!--分隔线-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grayline"
+                />
+
+            <!--关键词-->
+            <!--标题-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="30dp"
+                    android:text="关键词"
+                    android:gravity="center"
+                    android:background="@drawable/text_view_border"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/txt_keywords"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center"
+                    />
+
+            </LinearLayout>
+            <!--属性标签-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!--关键词第一行-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:textSize="10sp"
+                        android:text="工作装"
+                        android:background="@drawable/text_view_border"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:textSize="10sp"
+                        android:text="复古"
+                        android:background="@drawable/text_view_border"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:textSize="10sp"
+                        android:text="欧美"
+                        android:background="@drawable/text_view_border"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:textSize="10sp"
+                        android:text="日系"
+                        android:background="@drawable/text_view_border"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+
+
+                </LinearLayout>
+                <!--关键词第二行-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txt_keywords21"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:textSize="10sp"
+                        android:text="都市"
+                        android:background="@drawable/text_view_border"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:textSize="10sp"
+                        android:text="运动"
+                        android:background="@drawable/text_view_border"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:textSize="10sp"
+                        android:text="户外"
+                        android:background="@drawable/text_view_border"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:textSize="10sp"
+                        android:text="成熟"
+                        android:background="@drawable/text_view_border"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--分隔线-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grayline"
+                />
+
+            <!--季节-->
+            <!--标题-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="30dp"
+                    android:text="季节"
+                    android:gravity="center"
+                    android:background="@drawable/text_view_border"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/txt_season"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center"
+                    />
+
+            </LinearLayout>
+            <!--属性标签-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!--关键词第一行-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txt_season11"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:textSize="10sp"
+                        android:text="春季"
+                        android:background="@drawable/text_view_border"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:id="@+id/txt_season12"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:textSize="10sp"
+                        android:text="夏季"
+                        android:background="@drawable/text_view_border"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:textSize="10sp"
+                        android:text="秋季"
+                        android:background="@drawable/text_view_border"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:textSize="10sp"
+                        android:text="冬季"
+                        android:background="@drawable/text_view_border"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!--分隔线-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grayline"
+                />
+
+            <!--评分-->
+            <!--标题-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="30dp"
+                    android:text="评分"
+                    android:gravity="center"
+                    android:background="@drawable/text_view_border"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:stepSize="0.5"
+                android:isIndicator="false"
+                android:progressTint="@color/rating_bar"
+                android:id="@+id/rtb"
+                style="?android:attr/ratingBarStyleIndicator"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+               />
+
+            <!--提交按钮-->
+            <Button
+                android:id="@+id/btn_entry"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:text="录入"
+                android:textSize="10sp"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:background="@drawable/btn_shape_control"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="50dp"/>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

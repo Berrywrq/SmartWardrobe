@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="gray">#e7e7e7</color>
+    <color name="grayline">#cecece</color>
+    <color name="palette11">#030303</color>
+    <color name="palette12">#626061</color>
+    <color name="palette13">#a4a3a3</color>
+    <color name="palette14">#ffffff</color>
+    <color name="palette15">#58001e</color>
+    <color name="palette16">#db0525</color>
+    <color name="palette17">#f86205</color>
+    <color name="palette21">#fed002</color>
+    <color name="palette22">#7ef903</color>
+    <color name="palette23">#03fecc</color>
+    <color name="palette24">#0278fe</color>
+    <color name="palette25">#030bf9</color>
+    <color name="palette26">#9035fe</color>
+    <color name="palette27">#ff03d1</color>
+    <color name="palette31">#ff9c50</color>
+    <color name="palette32">#fb70ca</color>
+    <color name="palette33">#fbef87</color>
+    <color name="palette34">#c7fa80</color>
+    <color name="palette35">#5ad3bf</color>
+    <color name="palette36">#d373ff</color>
+    <color name="palette37">#015002</color>
+    <color name="weather_top">#FF1A3A63</color>
+    <color name="weather_bottom">#FF296191</color>
+    <color name="weather_background">#51adfb</color>
+    <color name="text_view">#FF9BCEFE</color>
+    <color name="rating_bar">#ff1209</color>
+
+    <color name="primary">#3c515c</color>
+    <color name="white">#FFFFFF</color>
+    <color name="scrim">#42000000</color>
+    <color name="pressed">#33000000</color>
+
+    <color name="light_blue_500">#03A9F4</color>
+    <color name="cyan_500">#00BCD4</color>
+    <color name="teal_500">#009688</color>
+    <color name="green_500">#4CAF50</color>
+    <color name="light_green_500">#8BC34A</color>
+
+    <color name="tumblr_primary">#36465D</color>
+    <color name="tumblr_orange">#F2992E</color>
+    <color name="tumblr_green">#56BC8A</color>
+    <color name="tumblr_white">#FFFFFF</color>
+    <color name="tumblr_grey">#748089</color>
+    <color name="tumblr_blue">#4AA8D8</color>
+    <color name="tumblr_red">#D95E40</color>
+
+    <color name="path_primary">#E62F17</color>
+    <color name="path_orange">#FF9500</color>
+    <color name="path_blue">#1774E6</color>
+    <color name="path_black">#403B36</color>
+    <color name="path_green">#5FB336</color>
+    <color name="path_purple">#49098A</color>
+
+    <color name="web_btn">#648ae0ff</color>
+
+</resources>

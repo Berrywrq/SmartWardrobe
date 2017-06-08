@@ -1,0 +1,223 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.android.ui.ControlFragment"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="2.5">
+
+<ImageView
+    android:layout_width="25dp"
+    android:layout_height="25dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/weather1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  26℃"
+            android:textSize="11sp"
+            android:textColor="@color/path_black"
+            android:layout_marginTop="5dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  空气质量："
+            android:textSize="11sp"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="良"
+            android:textSize="11sp"
+            android:textColor="@color/light_green_500"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  污染指数"
+            android:textSize="11sp"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  88"
+            android:textSize="11sp"
+            android:textColor="@color/tumblr_orange"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  南风微风"
+            android:textSize="11sp"
+            android:layout_marginTop="5dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/grayline"
+        />
+    <!--温湿度显示框-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="top"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/tempture"/>
+
+            <TextView
+                android:id="@+id/txt_tem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"
+                android:text="衣柜温度:"
+                android:textSize="22sp"
+                />
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="12"
+                android:textSize="20dp"
+                android:background="@drawable/text_view_border"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/water"/>
+
+            <TextView
+                android:id="@+id/txt_hum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"
+                android:text="衣柜湿度:"
+                android:textSize="22sp"
+                />
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="10%RH"
+                android:textSize="20dp"
+                android:background="@drawable/text_view_border"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/time"
+                />
+
+            <TextView
+                android:id="@+id/txt_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"
+                android:text="上次杀菌:"
+                android:textSize="22sp"
+                />
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="5-4 12:00"
+                android:textSize="20dp"
+                android:background="@drawable/text_view_border"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <!--控制按钮-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="30dp">
+
+        <Button
+            android:text="折叠"
+            android:textSize="12sp"
+            android:textColor="#ffffff"
+            android:layout_width="45dp"
+            android:layout_height="60dp"
+            android:layout_margin="30dp"
+            android:id="@+id/btn1"
+            android:layout_weight="1"
+            android:background="@drawable/btn_shape_control"/>
+
+        <Button
+            android:text="杀菌"
+            android:textSize="12sp"
+            android:textColor="#ffffff"
+            android:layout_width="45dp"
+            android:layout_height="60dp"
+            android:layout_margin="30dp"
+            android:id="@+id/btn2"
+            android:layout_weight="1"
+            android:background="@drawable/btn_shape_control"/>
+
+        <Button
+            android:text="除湿"
+            android:textSize="12sp"
+            android:textColor="#ffffff"
+            android:layout_width="45dp"
+            android:layout_height="60dp"
+            android:layout_margin="30dp"
+            android:id="@+id/btn3"
+            android:layout_weight="1"
+            android:background="@drawable/btn_shape_control"/>
+
+    </LinearLayout>
+
+</LinearLayout>
